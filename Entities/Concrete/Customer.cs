@@ -1,10 +1,14 @@
 ﻿using System;
+using Entities.Abstract;
+
 namespace Entities.Concrete
 {
-    public class Customer
+    public class Customer:IEntity
     {
-        public Customer()
-        {
-        }
+        public string CustomerId { get; set; }
+        public string ContactName { get; set; }
+        public string CompanyName { get; set; }
+        public string City { get; set; }
+
     }
 }

@@ -1,7 +1,9 @@
 ﻿using System;
+using Entities.Concrete;
+
 namespace DataAccess.Abstract
 {
-    public interface ICustomerDal
+    public interface ICustomerDal:IEntityRepository<Customer>
     {
     }
 }
